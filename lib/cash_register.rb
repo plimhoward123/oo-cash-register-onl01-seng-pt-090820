@@ -19,6 +19,10 @@ class CashRegister
   end
 
   def apply_discount
-    puts total
+    if (discount != 0)
+
+    else
+      puts "No discount(s) applied"
+    end
   end
 end
