@@ -20,7 +20,7 @@ class CashRegister
 
   def apply_discount
     if (self.discount != 0)
-      puts self.discount
+      puts self.discount / 100
     else
       puts "There is no discount to apply."
     end
