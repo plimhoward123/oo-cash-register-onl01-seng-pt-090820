@@ -22,7 +22,7 @@ class CashRegister
     if (discount != 0)
 
     else
-      puts "No discount(s) applied"
+      puts "There is no discount to apply."
     end
   end
 end
