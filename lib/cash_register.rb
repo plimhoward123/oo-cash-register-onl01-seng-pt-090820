@@ -39,5 +39,5 @@ class CashRegister
   def total
      @total
   end
-  
+
 end
