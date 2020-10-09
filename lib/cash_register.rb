@@ -19,6 +19,6 @@ class CashRegister
   end
 
   def apply_discount
-    puts (self.total * (self.discount / 100))
+    puts total
   end
 end
