@@ -18,6 +18,7 @@ class CashRegister
     self.total = self.total + (price * quant)
     (1..quant) do |i|
       self.items << item
+    end
   end
 
   def apply_discount
