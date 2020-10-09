@@ -1,5 +1,5 @@
 class CashRegister
-  attr_accessor :discount, :total, :items
+  attr_accessor :discount, :total, :items, :last_item
 
   def initialize(discout = 0)
     self.new(discout)
@@ -11,12 +11,9 @@ class CashRegister
     self.items = []
   end
 
-  def total
-     @total
-  end
-
   def add_item(item,price,quant = 1)
     self.total = self.total + (price * quant)
+    self.last_item = (price * quant)
     quant.times do |val|
       self.items << item
     end
@@ -31,7 +28,16 @@ class CashRegister
     end
   end
 
+  def void_last_transaction
+    self.total = (self.total - self.last_item)
+    self.items.pop
+  end
+
   def items
     @items
   end
+  def total
+     @total
+  end
+  
 end
