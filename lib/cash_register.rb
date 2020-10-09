@@ -1,5 +1,5 @@
 class CashRegister
-  attr_accessor :discount, :total, :items
+  attr_accessor :discount, :total, :items = []
 
   def initialize(discout = 0)
     self.new(discout)
