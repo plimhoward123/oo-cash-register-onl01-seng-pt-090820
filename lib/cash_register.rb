@@ -17,7 +17,7 @@ class CashRegister
   def add_item(item,price,quant = 1)
     self.total = self.total + (price * quant)
     quant.times do |val|
-      self.items << item
+      #self.items << item
     end
   end
 
