@@ -5,6 +5,10 @@ class CashRegister
     self.new(discout)
   end
 
+  def items=()
+    @items = []
+  end
+
   def new(dis = 0)
     self.discount = dis
     self.total = 0
@@ -29,9 +33,7 @@ class CashRegister
       return "There is no discount to apply."
     end
   end
-  def items=()
-    @items = []
-  end
+  
   def items
     @items
   end
