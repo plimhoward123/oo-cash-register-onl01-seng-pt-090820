@@ -3,9 +3,9 @@ class CashRegister
 
   def initialize(discout = 0)
     @discount = discount
+    self.new
   end
-  def new(val)
-    initialize(val)
+  def new
     self.total = 0
   end
   def total
