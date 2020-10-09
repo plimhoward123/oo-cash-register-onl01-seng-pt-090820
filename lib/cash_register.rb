@@ -16,7 +16,7 @@ class CashRegister
 
   def add_item(item,price,quant = 1)
     self.total = self.total + (price * quant)
-    (1..quant) do |i|
+    (1..quant).each do |i|
       self.items << item
     end
   end
